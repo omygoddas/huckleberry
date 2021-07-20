@@ -10,13 +10,21 @@ body {
 }
 
 /* Add styles here! */
+html {
+  font-size: 1.125rem;
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 96px 0;
+}
+
 header {
-  padding: 64px 128px 32px;
   border-bottom: 4px solid hsl(0deg, 0%, 40%);
 }
 
 main {
-  padding: 64px 128px 32px;
   background: hsl(0deg, 0%, 60%);
 }
 
@@ -24,9 +32,9 @@ main {
   padding: 4px 16px 16px;
 }
 
-.title {
+.intro-chunk .title {
   margin-bottom: 32px;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .intro-chunk p {
@@ -50,44 +58,4 @@ strong {
   font-size: 1rem;
   margin-left: -32px;
   margin-top: 0;
-}
-
-/* table & mobile view */
-@media (max-width: 768px) {
-  header {
-    padding: 64px 0 32px;
-  }
-
-  main {
-    padding: 64px 0 32px;
-  }
-
-  .title, .indented-heading {
-    font-size: 2rem;
-  }
-
-  .intro-chunk p {
-    width: 400px;
-    font-size: 1.5rem;
-  }
-
-  .card p {
-    font-size: 1.5rem;
-  }
-}
-
-/* mobile view only */
-@media (max-width: 420px) {
-  .indented-heading {
-    width: 100%;
-  }
-
-  .intro-chunk p {
-    width: 100%;
-    font-size: 2rem;
-  }
-
-  .card p {
-    font-size: 2rem;
-  }
 }
